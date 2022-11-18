@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A02F8C5D2926577C00FC97D7 /* CatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F8C5C2926577C00FC97D7 /* CatsTableViewController.swift */; };
+		A02F8C5F2926580100FC97D7 /* CatsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F8C5E2926580100FC97D7 /* CatsDetailViewController.swift */; };
+		A02F8C63292658E100FC97D7 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F8C62292658E100FC97D7 /* Cat.swift */; };
+		A02F8C652926591100FC97D7 /* CatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F8C642926591100FC97D7 /* CatTableViewCell.swift */; };
+		A02F8C6729269E2300FC97D7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F8C6629269E2300FC97D7 /* NetworkManager.swift */; };
 		A0933EA0292579C000FEA5DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0933E9F292579C000FEA5DC /* AppDelegate.swift */; };
 		A0933EA2292579C000FEA5DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0933EA1292579C000FEA5DC /* SceneDelegate.swift */; };
 		A0933EA7292579C000FEA5DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0933EA5292579C000FEA5DC /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A02F8C5C2926577C00FC97D7 /* CatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsTableViewController.swift; sourceTree = "<group>"; };
+		A02F8C5E2926580100FC97D7 /* CatsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsDetailViewController.swift; sourceTree = "<group>"; };
+		A02F8C62292658E100FC97D7 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		A02F8C642926591100FC97D7 /* CatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTableViewCell.swift; sourceTree = "<group>"; };
+		A02F8C6629269E2300FC97D7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A0933E9C292579C000FEA5DC /* CatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0933E9F292579C000FEA5DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0933EA1292579C000FEA5DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +45,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A03AA1CB2927D29C00D08B70 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A02F8C6629269E2300FC97D7 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A03AA1CC2927D2D800D08B70 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A02F8C5C2926577C00FC97D7 /* CatsTableViewController.swift */,
+				A02F8C5E2926580100FC97D7 /* CatsDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A03AA1CD2927D33500D08B70 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A02F8C642926591100FC97D7 /* CatTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		A03AA1CE2927D36900D08B70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A02F8C62292658E100FC97D7 /* Cat.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A03AA1CF2927D3A800D08B70 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A0933E9F292579C000FEA5DC /* AppDelegate.swift */,
+				A0933EA1292579C000FEA5DC /* SceneDelegate.swift */,
+				A0933EAD292579C100FEA5DC /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A03AA1D02927D3EC00D08B70 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A0933EA5292579C000FEA5DC /* Main.storyboard */,
+				A0933EAA292579C100FEA5DC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A03AA1D12927D3FF00D08B70 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0933EA8292579C100FEA5DC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A0933E93292579C000FEA5DC = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +124,13 @@
 		A0933E9E292579C000FEA5DC /* CatsApp */ = {
 			isa = PBXGroup;
 			children = (
-				A0933E9F292579C000FEA5DC /* AppDelegate.swift */,
-				A0933EA1292579C000FEA5DC /* SceneDelegate.swift */,
-				A0933EA5292579C000FEA5DC /* Main.storyboard */,
-				A0933EA8292579C100FEA5DC /* Assets.xcassets */,
-				A0933EAA292579C100FEA5DC /* LaunchScreen.storyboard */,
-				A0933EAD292579C100FEA5DC /* Info.plist */,
+				A03AA1CC2927D2D800D08B70 /* ViewControllers */,
+				A03AA1CD2927D33500D08B70 /* TableViewCell */,
+				A03AA1D02927D3EC00D08B70 /* Storyboards */,
+				A03AA1CE2927D36900D08B70 /* Models */,
+				A03AA1CB2927D29C00D08B70 /* Networking */,
+				A03AA1D12927D3FF00D08B70 /* Resources */,
+				A03AA1CF2927D3A800D08B70 /* App */,
 			);
 			path = CatsApp;
 			sourceTree = "<group>";
@@ -136,6 +207,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0933EA0292579C000FEA5DC /* AppDelegate.swift in Sources */,
+				A02F8C5D2926577C00FC97D7 /* CatsTableViewController.swift in Sources */,
+				A02F8C63292658E100FC97D7 /* Cat.swift in Sources */,
+				A02F8C6729269E2300FC97D7 /* NetworkManager.swift in Sources */,
+				A02F8C5F2926580100FC97D7 /* CatsDetailViewController.swift in Sources */,
+				A02F8C652926591100FC97D7 /* CatTableViewCell.swift in Sources */,
 				A0933EA2292579C000FEA5DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QZ329TNU43;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CatsApp/Info.plist;
+				INFOPLIST_FILE = CatsApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -316,7 +392,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QZ329TNU43;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CatsApp/Info.plist;
+				INFOPLIST_FILE = CatsApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
