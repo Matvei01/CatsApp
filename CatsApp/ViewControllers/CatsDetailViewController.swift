@@ -15,11 +15,11 @@ class CatsDetailViewController: UIViewController {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-     var cat: Cat!
+    var cat: Cat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
         activityIndicator.style = .large
